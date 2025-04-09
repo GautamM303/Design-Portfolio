@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Position Statement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: black;
+      color: #ffe81f;
+      overflow: hidden;
+    }
+
+    .star-wars,
+    .fade-in-content {
+      background: url('https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .star-wars {
+      perspective: 400px;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .crawl {
+      position: absolute;
+      top: 100vh;
+      width: 100%;
+      transform-origin: 50% 100%;
+      animation: crawl 20s linear forwards;
+      text-align: center;
+    }
+
+    @keyframes crawl {
+      0% {
+        top: 100vh;
+        transform: rotateX(20deg) translateZ(0);
+      }
+      100% {
+        top: -200vh;
+        transform: rotateX(25deg) translateZ(-300px);
+      }
+    }
+
+    .fade-in-content {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1s ease;
+      color: #ffe81f;
+      text-shadow: 2px 2px 4px #000;
+      padding: 40px;
+      box-sizing: border-box;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .fade-in-content h1 {
+      text-align: center;
+      font-size: 3em;
+    }
+
+    .fade-in-content p,
+    .fade-in-content a {
+      text-align: center;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-top: 30px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <!-- Background Music -->
+  <audio autoplay loop>
+    <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+    Your browser does not support the audio element.
+  </audio>
+
+  <!-- Star Wars Crawl -->
+  <div class="star-wars">
+    <div class="crawl">
+      <h1>Episode I</h1>
+      <p>POSITION STATEMENT</p>
+      <p>
+        In a galaxy not so far away, a young engineer embarks on a journey to define their purpose. Guided by creativity and determination, this mission begins now.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="fade-in-content" id="content">
+    <h1>Position Statement</h1>
+    <p>The Force is strong with this engineer. Explore the ideas, inspirations, and goals driving his engineering mission.</p>
+
+    <div class="video-container">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/VBwj9LFKQnk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div style="max-width: 800px; margin: 40px auto; text-align: left;">
+        <h2 style="color: #fff;">Original Position Statement</h2>
+        <p>
+          Engineering Design is a process of slowly building "brick by brick" to achieve a certain goal, whether this be for entertainment, or to better humanity.
+          With each problem there are various ways to approach the solution, but in the end there is one optimal way to solve it.
+        </p>
+      
+        <h2 style="color: #fff; margin-top: 30px;">Updated Position Statement</h2>
+        <p>
+          Engineering Design is the iterative process of working towards a solution, with various levels of diverging and converging.
+          With each unique opinion comes a new approach to a solution, and this can be extremely beneficial when observing the entire design space for a solution.
+          Through various methods of validation and verification we can eventually converge onto one optimal solution.
+        </p>
+      </div>
+      
+    <p><a href="praxis.html">← Back to Home</a></p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.querySelector('.star-wars').style.display = 'none';
+      const content = document.getElementById('content');
+      content.style.visibility = 'visible';
+      content.style.opacity = '1';
+    }, 10000); // 10 seconds
+  </script>
+</body>
+</html>
