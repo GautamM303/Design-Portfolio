@@ -106,19 +106,35 @@
     <p>The result of our process is <strong>Bonsai Bloom</strong>—a mobile app that uses a smartphone camera to scan soil, extract color values, and convert them into a moisture percentage using calibrated reference values. With additional features like time logging, note-taking, and visual hex-code displays, the app offers an accessible, non-invasive tool to help bonsai enthusiasts better care for their trees.</p>
     <p>Now we will take a closer look into how these tools were used to work on building our final working solution, Bonsai Bloom!</p>
 
-    <h2>Reverse Brainstorming</h2>
+    <h2>Reverse Brainstorming - Diverge and Reframe</h2>
     <p>During Praxis II, our team initially struggled to define a focused design problem for accurately measuring soil moisture in bonsai trees. To better understand the complexity of the problem space, I led a reverse brainstorming session where we flipped the traditional brainstorming approach. Instead of asking, "How can we solve this?" we asked, "How could we make the problem worse?" This method helped uncover hidden challenges—ranging from inconsistent soil types, to poor probe contact, to how difficult it is for beginners to interpret qualitative moisture cues.</p>
     <p>The visual below captures that studio, where we mapped both the root causes of the problem and potential "preventions" that pointed toward design opportunities. This activity was particularly valuable before and after our stakeholder meeting with the Toronto Bonsai Society. In that meeting, we received valuable input from both seasoned bonsai caretakers and newer hobbyists. A major takeaway was that beginners often struggle with understanding moisture needs across different bonsai species—and that Junipers were both common and especially challenging for them. Based on this, our team revised the scope of our project to focus specifically on Juniper bonsais and tailor our solution for beginner bonsai enthusiasts.</p>
     <p>This led to the addition of a new design requirement: our solution must deliver species-specific, beginner-friendly feedback on soil moisture. Reverse brainstorming helped lay the groundwork for this pivot, as it exposed how many variables interact to make soil moisture difficult to measure and interpret. When combined with real-world stakeholder feedback, it gave our team a much clearer sense of direction and allowed us to iterate with more purpose and empathy toward our users.</p>
     <img class="centered-img" src="REVERSE.png" alt="Reverse Brainstorming Studio" />
 
-    <h2>Pairwise Comparison</h2>
+    <h2>Pairwise Comparison - Pre Converge</h2>
     <p>While working toward a final solution, our team began with a phase of divergence, where we encouraged a wide range of creative and unconventional ideas. This initial brainstorming phase yielded several promising and distinct concepts for how we might measure moisture in bonsai soil more accurately. However, before jumping into the prototyping phase, we needed to evaluate which of these ideas had the greatest potential to meet our project goals and stakeholder needs.</p>
     <p>To do this, we used a pairwise comparison matrix—a structured decision-making tool that helped us compare each concept against the others using consistent criteria such as accuracy, usability, portability, and plant safety. Rather than filling out the matrix individually, we made it a collaborative and engaging process. Jessie Xie and Amy Li took turns advocating for and against each pair of ideas, presenting the pros and cons of the concepts under discussion. Meanwhile, Chandresh and I acted as impartial judges, listening carefully to each argument before deciding which concept should advance to the next round.</p>
     <p>This method helped us move beyond surface-level preferences and pushed us to think more critically about each solution's strengths and weaknesses. It also allowed us to involve everyone's perspective while avoiding groupthink. By the end of this exercise, we had a much clearer understanding of which designs aligned best with our criteria and were most worth developing further. This gave our prototyping phase a solid foundation rooted in thoughtful evaluation and team consensus.</p>
     <img class="centered-img" src="PAIRWISE.png" alt="Pairwise Comparison Matrix" />
+<h2>Pugh Chart – Converge</h2>
 
-    <h2>Prototyping</h2>
+<p>
+During our Praxis II project, we used a Pugh Chart to systematically compare multiple concepts we had generated for measuring moisture in bonsai soil. With several potential ideas on the table—including a sponge-based sensor, a villi probe, a claw insert, and our final colour scanner—we needed a clear framework to converge on one direction.
+</p>
+
+<p>
+Using criteria such as accuracy, invasiveness, corrosion risk, and the ability to provide a quantitative reading, we evaluated each design against a reference concept. The process highlighted strengths and weaknesses that weren't immediately obvious from brainstorming alone. This allowed us to eliminate infeasible options and focus our resources on the colour scanner—a solution that best aligned with the needs of beginner bonsai users.
+</p>
+
+<p>
+This approach reflects my broader position on engineering design: convergence should be driven by both structure and stakeholder context. Our decision was not only based on numerical comparisons but on our conversations with bonsai community members who emphasized ease-of-use and safety for root systems. The Pugh Chart provided a methodical, low-bias way to weigh trade-offs and move forward with confidence.
+</p>
+
+<div style="text-align: center; margin-top: 20px;">
+  <img src="PUGH2.png" alt="Pugh Charts used to evaluate bonsai moisture sensor concepts" style="max-width: 100%; height: auto;">
+</div>
+    <h2>Prototyping - Represent</h2>
     <p>These CAD models, which I created, visualize the early mechanical concepts we explored—specifically, the Villi Probe, Sponge, and Claw—as well as the proposed housing for the color sensor. Each concept targeted different ways to gather soil moisture data in aggregate bonsai soil without damaging roots or disturbing the plant. These digital prototypes allowed us to simulate form, function, and feasibility before committing to any physical builds.</p>
     <p>This stage of prototyping was incredibly valuable for our team. It gave us clarity on what internal components would need to be housed, how the user would interact with the device, and how various sensor components—like the Arduino-based color scanner—might integrate with our designs. After constructing a rough prototype of the scanner, we ran a series of early tests to verify whether our concept could reliably measure soil moisture using changes in color.</p>
     <p>However, during validation, we began noticing major inconsistencies in the hex code output from our Arduino scanner. The color readings varied too much across trials and lighting conditions, which undermined our confidence in its reliability. These discrepancies prompted deeper conversations within our team and led to a critical pivot point in our design process. Rather than continuing to invest in a complex physical sensing system, we chose to shift our focus toward a digital solution that leverages the user's phone camera to analyze color—a method that promised better calibration, flexibility, and accessibility for beginner bonsai owners.</p>
