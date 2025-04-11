@@ -1,65 +1,112 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Engineering Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
-      font-family: Arial, sans-serif;
-      background-color: #f9f9f9;
       margin: 0;
-      padding: 0;
+      font-family: 'Inter', sans-serif;
+      background-color: #f4f6f9;
+      color: #333;
     }
+
     header {
-      background-color: #004080;
+      background-color: #003366;
       color: white;
-      padding: 20px;
+      padding: 40px 20px;
       text-align: center;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
     }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+    }
+
+    header p {
+      margin-top: 10px;
+      font-size: 1.2em;
+    }
+
     nav {
-      background-color: #e0e0e0;
-      padding: 10px 20px;
+      background-color: #ffffff;
       display: flex;
       justify-content: center;
-      gap: 20px;
+      gap: 30px;
+      padding: 15px 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+      font-weight: 600;
     }
-    nav a {
-      text-decoration: none;
-      color: #004080;
-      font-weight: bold;
-    }
-    nav a:hover {
-      text-decoration: underline;
-    }
-    main {
-  padding: 0 20px 40px 20px;
-  max-width: 800px;
-  margin: 0 auto;
-  text-align: left;
 
+    nav a {
+      color: #003366;
+      text-decoration: none;
+      transition: color 0.3s;
     }
-    .intro-text {
-      font-size: 1.2em;
+
+    nav a:hover {
+      color: #005bb5;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 40px auto;
+      padding: 0 20px;
+      background-color: #ffffff;
+      border-radius: 8px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    main h2 {
+      color: #003366;
+      border-bottom: 2px solid #dcdcdc;
+      padding-bottom: 8px;
+      margin-top: 30px;
+    }
+
+    main p {
+      font-size: 1.1em;
       line-height: 1.6;
-      text-align: center;
-      max-width: 800px;
-      margin: 40px auto 20px auto;
-    }
-    .reflection-block p {
       margin-bottom: 20px;
     }
-    .reflection-block span {
-      display: inline-block;
+
+    footer {
+      text-align: center;
+      margin: 60px 0 20px;
+      font-size: 0.9em;
+      color: #888;
+    }
+
+    .reflection-item {
+      margin-bottom: 20px;
+    }
+
+    .reflection-item strong {
+      display: block;
+      margin-bottom: 5px;
+      color: #003366;
+    }
+
+    .indent {
+      display: block;
       margin-left: 20px;
     }
   </style>
 </head>
 <body>
-  <header>
-    <h1>Engineering Portfolio</h1>
-    <p>by Gautam Manerikar</p>
+
+  <header style="background-color: #004080; color: white; padding: 20px; display: flex; align-items: center; justify-content: center; gap: 30px;">
+    <img src="GAUTAM.png" alt="Photo of Gautam Manerikar" style="width: 150px; height: 150px; border-radius: 50%; object-fit: cover; border: 3px solid white;" />
+    <div>
+      <h1 style="margin: 0;">Engineering Portfolio</h1>
+      <p style="margin-top: 10px;">by Gautam Manerikar</p>
+    </div>
   </header>
+  
+  
 
   <nav>
     <a href="position-statement.html">Position Statement</a>
@@ -68,69 +115,46 @@
     <a href="praxis-ii.html">Praxis II</a>
     <a href="references.html">References</a>
   </nav>
-  <div style="display: flex; align-items: flex-start; gap: 20px; max-width: 1000px; margin: 40px auto 0 auto; padding: 0 20px;">
-    <div style="flex-shrink: 0;">
-      <img src="GAUTAM.png" alt="Gautam Manerikar" style="width: 180px; border-radius: 10px; box-shadow: 0 4px 8px rgba(0,0,0,0.15);" />
-      <p style="font-size: 0.9em; color: #555; text-align: center;">Gautam Manerikar</p>
-    </div>
-    <div style="flex: 1;">
-      <p class="intro-text">
-        As part of my journey through Praxis, I’ve taken time to reflect on how I define engineering, design, and engineering design—and how these definitions have evolved through experience. These reflections help me better understand the role of empathy, iteration, and stakeholder awareness in shaping practical and meaningful solutions.
-      </p>
-      <p class="intro-text" style="font-size: 1em; margin-top: -10px;">
-        Above are links to explore my Position Statement, Praxis I, CIV102 Bridge Project, and Praxis II work are above.
-      </p>
-    </div>
-  </div>
-
 
   <main>
-    
-    <div class="reflection-block">
-      <h2 style="color: #000;">Reflections</h2>
+    <h2>Welcome</h2>
+    <p>This portfolio documents my journey through engineering design at the University of Toronto. Each section explores a core project where I’ve applied creative problem-solving, collaborative prototyping, and stakeholder-driven iteration.</p>
+    <p>Click the sections above to view my Position Statement, Praxis I and II projects, the CIV102 Bridge design, and reference materials.</p>
 
-      <p><strong>Engineering is:</strong><br>
-        <span>
-          The process of creating a product that is beneficial to a group of stakeholders and has undergone thought. This entails that iterations have gone through when constructing the product and several different perspectives have gone into creating a solution.
-        </span>
-      </p>
+    <h2>About This Portfolio</h2>
+    <p>Throughout this journey, I’ve explored real-world challenges, from stabilizing wobbly chairs to creating tools that help beginner bonsai caretakers. This site is a reflection of the values I bring to engineering: empathy, adaptability, teamwork, and curiosity.</p>
 
-      <p style="margin-left: 20px;"><strong>Why I think this is:</strong><br>
-        <span>
-          I think this is the case because as an engineer we have to make decisions that will create the best possible solution to resolve the problem/opportunity. This primarily relies on the product's ability to function and solve the problem, rather than working to make it easy for a consumer.
-        </span>
-      </p>
+    <h2>Reflections from Studio</h2>
+    <div class="reflection-item">
+      <strong>Engineering is:</strong>
+      <span class="indent">The process of creating a product that is beneficial to a group of stakeholders and has undergone thoughtful iteration.</span>
+      <strong>Why I think this is:</strong>
+      <span class="indent">As engineers, we must create the best possible solution by prioritizing functionality and solving problems—often over consumer ease.</span>
+    </div>
 
-      <p><strong>Design is:</strong><br>
-        <span>
-          The process of creating a product that is either aesthetically pleasing for a consumer or that is the most user-friendly (usable). This entails that the design is able to successfully achieve the desired use as easily as possible.
-        </span>
-      </p>
+    <div class="reflection-item">
+      <strong>Design is:</strong>
+      <span class="indent">The process of creating a product that is either aesthetically pleasing or user-friendly and intuitive to use.</span>
+      <strong>Why I think this:</strong>
+      <span class="indent">When designing, we must ensure it’s appealing for the user while being realistic and applicable in the real world.</span>
+    </div>
 
-      <p style="margin-left: 20px;"><strong>Why I think this:</strong><br>
-        <span>
-          I think this is the case because it is important that when creating designs we need to put thought into whether this is appealing for a consumer to purchase and whether or not it can be applied in the real world.
-        </span>
-      </p>
+    <div class="reflection-item">
+      <strong>Engineering Design is:</strong>
+      <span class="indent">A combination of engineering and design—a product that solves the problem efficiently while also being usable and appealing.</span>
+      <strong>Why I think this:</strong>
+      <span class="indent">In decision-making, engineering students must account for multiple DFx factors. It’s easy to over-focus on one area, which can compromise others.</span>
+    </div>
 
-      <p><strong>Engineering Design is:</strong><br>
-        <span>
-          A combination of both engineering and design where you have to create a product that is both applicable to solve the intended problem as efficiently as possible and able to appeal to the stakeholders as usable and aesthetically pleasing.
-        </span>
-      </p>
-
-      <p style="margin-left: 20px;"><strong>Why I think this:</strong><br>
-        <span>
-          I think this is the case because as an engineering student I feel that when making decisions we have to be conscious of the various different DFx’s and when creating a design this can impact and change our design. This is prominent as when creating products to resolve issues we can find ourselves to be too focused on a particular aspect ruining the effectiveness of others. Hence why an important design which can still encompass and is more versatile for the user will be preferred.
-        </span>
-      </p>
-
-      <p><strong>How did your understanding of framing or other Praxis models inform your engagement with the RFP?</strong><br>
-        <span>
-          Throughout Praxis my thought process when working towards engineering design has changed as I have become much more conscious of constantly addressing the stakeholders' needs. Now as I begin to work with a real client rather than a “Splartz” I have become aware of communicating with clients and working towards a solution. Despite my own RFP not moving forward I understood how to converse with a community in a manner where they did not feel threatened or forced to commit to anything while still being able to get valuable information. Now as I begin to reframe the selected RFP I see the importance in each step along the journey and how crucial it is to address stakeholder needs.
-        </span>
-      </p>
+    <div class="reflection-item">
+      <strong>How has framing and Praxis affected your work?</strong>
+      <span class="indent">Framing has helped me center stakeholder needs. With real clients, I’ve learned how to gather insights respectfully and reframe opportunities into actionable design solutions.</span>
     </div>
   </main>
+
+  <footer>
+    &copy; 2025 Gautam Manerikar. All rights reserved.
+  </footer>
+
 </body>
 </html>
