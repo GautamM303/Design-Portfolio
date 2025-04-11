@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Position Statement</title>
+  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Orbitron', sans-serif;
+      background: black;
+      color: #ffe81f;
+      overflow: hidden;
+    }
+
+    .star-wars,
+    .fade-in-content {
+      background: url('https://lumiere-a.akamaihd.net/v1/images/star-wars-backgrounds-25_bc15ec98.jpeg') no-repeat center center;
+      background-size: cover;
+    }
+
+    .star-wars {
+      perspective: 400px;
+      height: 100vh;
+      overflow: hidden;
+      position: relative;
+    }
+
+    .crawl {
+      position: absolute;
+      top: 100vh;
+      width: 100%;
+      transform-origin: 50% 100%;
+      animation: crawl 20s linear forwards;
+      text-align: center;
+    }
+    .fade-in-content p {
+  margin: 20px auto 30px auto; /* Adds more space between paragraphs */
+  line-height: 1.6;
+}
+
+
+    @keyframes crawl {
+      0% {
+        top: 100vh;
+        transform: rotateX(20deg) translateZ(0);
+      }
+      100% {
+        top: -200vh;
+        transform: rotateX(25deg) translateZ(-300px);
+      }
+    }
+
+    .fade-in-content {
+      visibility: hidden;
+      opacity: 0;
+      transition: opacity 1s ease;
+      color: #ffe81f;
+      text-shadow: 2px 2px 4px #000;
+      padding: 40px;
+      box-sizing: border-box;
+      height: 100vh;
+      overflow-y: auto;
+    }
+
+    .fade-in-content h1 {
+      text-align: center;
+      font-size: 3em;
+    }
+
+    .fade-in-content p,
+    .fade-in-content a {
+      text-align: center;
+      font-size: 1.2em;
+      max-width: 800px;
+      margin: 0 auto;
+    }
+
+    .video-container {
+      text-align: center;
+      margin: 40px 0;
+    }
+
+    a {
+      color: #ffffff;
+      text-decoration: none;
+      font-weight: bold;
+      display: block;
+      margin-top: 30px;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: black; padding: 10px; text-align: center; border-bottom: 2px dashed #ffe81f;">
+    <a href="index.html" style="color: #ffe81f; margin: 0 15px; font-weight: bold;">Home</a>
+    <a href="position-statement.html" style="color: #ffe81f; margin: 0 15px; font-weight: bold;">Position Statement</a>
+    <a href="praxis-i.html" style="color: #ffe81f; margin: 0 15px; font-weight: bold;">Praxis I</a>
+    <a href="civ-bridge.html" style="color: #ffe81f; margin: 0 15px; font-weight: bold;">CIV Bridge</a>
+    <a href="praxis-ii.html" style="color: #ffe81f; margin: 0 15px; font-weight: bold;">Praxis II</a>
+    <a href="references.html" style="color: #ffe81f; margin: 0 15px; font-weight: bold;">References</a>
+  </nav>
+  
+  
+  
+  <!-- Star Wars Crawl -->
+  <div class="star-wars">
+    <div class="crawl">
+      <h1>Episode I</h1>
+      <p>POSITION STATEMENT</p>
+      <p>
+        In a galaxy not so far away, a young engineer embarks on a journey to define their purpose. Guided by creativity and determination, this mission begins now.
+      </p>
+    </div>
+  </div>
+
+  <!-- Main Content -->
+  <div class="fade-in-content" id="content">
+    <h1>Position Statement</h1>
+    <p>The Force is strong with this engineer. Explore the ideas, inspirations, and goals driving his engineering mission.</p>
+
+    <div class="video-container">
+      <iframe width="854" height="480" src="https://www.youtube.com/embed/VBwj9LFKQnk" frameborder="0" allowfullscreen></iframe>
+    </div>
+    <div style="max-width: 800px; margin: 40px auto; text-align: center;">
+      <h2 style="color: #fff;">Original Position Statement</h2>
+      <p>
+        Engineering Design is a process of slowly building "brick by brick" to achieve a certain goal, whether this be for entertainment, or to better humanity.
+        With each problem there are various ways to approach the solution, but in the end there is one optimal way to solve it.
+      </p>
+      <h2 style="color: #fff; margin-top: 30px;">Updated Position Statement</h2>
+      <p>
+        Engineering Design is the iterative process of working towards a solution, with various levels of diverging and converging.
+        With each unique opinion comes a new approach to a solution, and this can be extremely beneficial when observing the entire design space for a solution.
+        Through various methods of validation and verification we can eventually converge onto one optimal solution.
+      </p>
+    </div>
+
+    <h2 style="text-align: center; color: #fff;">My Values and Beliefs in Engineering</h2>
+
+    <p> I believe thoughtful design can create meaningful impact—whether it's improving daily experiences or supporting niche communities. I value <strong>empathy-driven design</strong>, where understanding user needs is the foundation of effective solutions. </p> <p> In Praxis II, a meeting with the Toronto Bonsai Community reshaped our project. Josh shared how traditional moisture sensors damaged roots and gave inaccurate readings. This led us to pivot toward a <strong>non-invasive, Juniper-specific solution</strong> grounded in real feedback. </p> <p> I also believe <strong>collaboration drives innovation</strong>. In Praxis II, we used pairwise comparison to debate and evaluate early concepts. These structured discussions helped us converge on a stronger design. In Praxis I, Amy and I co-designed a <strong>portable chair stabilizer</strong>—a simple, practical fix based on student needs. </p> <p> <strong>Adaptability</strong> is essential to my approach. When our Arduino-based moisture sensor failed in testing, we pivoted to a phone-based solution that was simpler and more reliable. In CIV102, we redesigned our bridge over five iterations, using <strong>MATLAB simulations</strong> and feedback to refine structural performance. </p> <p> Finally, I value <strong>accessibility in engineering</strong>. Across all projects, I prioritized usability and clarity—ensuring solutions were easy to use, easy to build, and genuinely helpful to those they were meant for. </p>
+
+    <p><a href="index.html">← Back to Home</a></p>
+  </div>
+
+  <script>
+    setTimeout(() => {
+      document.querySelector('.star-wars').style.display = 'none';
+      const content = document.getElementById('content');
+      content.style.visibility = 'visible';
+      content.style.opacity = '1';
+    }, 5000); // 5 seconds
+  </script>
+</body>
+</html>

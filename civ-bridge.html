@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>CIV Bridge</title>
+  <link href="https://fonts.googleapis.com/css2?family=Share+Tech+Mono&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Share Tech Mono', monospace;
+      background-color: #0b1f3a;
+      background-image: linear-gradient(#0b1f3a 1px, transparent 1px),
+                        linear-gradient(90deg, #0b1f3a 1px, transparent 1px);
+      background-size: 40px 40px;
+      color: #cce7ff;
+      margin: 0;
+      padding: 40px;
+    }
+
+    h1, h2 {
+      color: #ffffff;
+      border-bottom: 1px dashed #cce7ff;
+      padding-bottom: 8px;
+      margin-top: 50px;
+    }
+
+    a {
+      color: #88ccff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    .centered-img {
+      display: block;
+      margin: 20px auto 0 auto;
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #cce7ff;
+    }
+
+    .caption {
+      max-width: 800px;
+      margin: 20px auto;
+      font-size: 1rem;
+      line-height: 1.6;
+      text-align: left;
+      background-color: rgba(255, 255, 255, 0.03);
+      border: 1px dashed #cce7ff;
+      padding: 20px;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background-color: rgba(255, 255, 255, 0.03);
+      margin-top: 20px;
+      border: 1px dashed #cce7ff;
+    }
+
+    th, td {
+      border: 1px solid #cce7ff;
+      padding: 10px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    th {
+      background-color: #122b4a;
+    }
+
+    .side-by-side-section {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      max-width: 1000px;
+      margin: 40px auto;
+      gap: 40px;
+    }
+
+    .text-block {
+      flex: 1;
+      max-width: 500px;
+    }
+
+    .image-block {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .image-block img {
+      max-width: 100%;
+      height: auto;
+      border: 2px solid #cce7ff;
+    }
+  </style>
+</head>
+<body>
+  <nav style="background-color: #0b1f3a; padding: 10px; text-align: center; border-bottom: 2px dashed #cce7ff;">
+    <a href="index.html" style="color: #88ccff; margin: 0 15px; font-weight: bold;">Home</a>
+    <a href="position-statement.html" style="color: #88ccff; margin: 0 15px; font-weight: bold;">Position Statement</a>
+    <a href="praxis-i.html" style="color: #88ccff; margin: 0 15px; font-weight: bold;">Praxis I</a>
+    <a href="civ-bridge.html" style="color: #88ccff; margin: 0 15px; font-weight: bold;">CIV Bridge</a>
+    <a href="praxis-ii.html" style="color: #88ccff; margin: 0 15px; font-weight: bold;">Praxis II</a>
+    <a href="references.html" style="color: #88ccff; margin: 0 15px; font-weight: bold;">References</a>
+  </nav>
+  
+  
+  <h1>CIV Bridge</h1>
+  <img class="centered-img" src="BRIDGE.png" alt="Bridge Project" />
+  <div class="caption">
+    <p>The above one pager was created in collaboration with Amy Liu, and displays our engineering process alongside Chi Lan Tran. BRIDGE BACKS worked closely together to construct a bridge that was calculated to withstand 1125 N while only using 90.8% of the provided matboard. The objective of the structural design project was to construct a bridge that would be able to maximize the load before failure as a 3 coach train would pass through. To simulate this testing upon our structure, Chi Lan tested the various iterations of testing using MATLAB, a computer software.</p>
+    <p>Due to the winner being the best strength to mass ratio, we tried to build a design that would both be able to hold several newtons, but also was as lightweight as possible. We were given a base case, with a base design which every team began iterating upon. Our team quickly began wishing what our bridge should be capable of and how we could maximize the strength, this will be discussed later. We then began various iterations upon the base design provided using SCAMPER which will be mentioned later. Finally, along with each design iteration, we had to verify the quality of the change. This was done through MATLAB simulating the movement of the train.</p>
+    <p>In a Praxis context, this project required us to subconsciously use the tools and methods we acquired in Praxis I, as we worked in a team working towards one final solution that would adhere to a stakeholders (us) objectives (holding the max weight). While constructing the bridge our team worked effortlessly in order to try and ensure that each piece was cut correctly and this resulted in our team receiving a quality score of 8.5 from Prof. Bentz.</p>
+    <p>A key design decision of ours was the splice attachment. This was something we encountered later on in the design process which required us to take a look at the Shear and Bending moment diagrams and find the optimal location to attach the two pieces. We then drew sketches of how exactly we would attach these components, and decided that it would be best if we were to fold them into each other. This would interlock each piece to each other proving to have a stronger bond. This resulted in our best attempt to construct a bridge that would be able to hold the maximum weight from the 3 coach train. Now we will begin to look at some of the main components of our design process, Wishing, SCAMPER and Verification. Each step was crucial to our success building upon each other for a final bridge.</p>
+  </div>
+
+  <h2>Wishing</h2>
+  <table>
+    <thead>
+      <tr>
+        <th>Wish</th>
+        <th>Wish not</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>I wish our bridge can hold 400 N</td><td>I wish our bridge does not fall off the sides</td></tr>
+      <tr><td>I wish our bridge [FOS] are all the same</td><td>I wish our bridge doesn't twist under load</td></tr>
+      <tr><td>I wish our bridge had a seamless splice connection</td><td>I wish our bridge isn't too difficult to construct</td></tr>
+      <tr><td>I wish our bridge achieves the best strength-to-weight ratio</td><td>I wish our bridge doesn't exceed the material limit</td></tr>
+      <tr><td>I wish our bridge used minimal adhesive while maintaining strength.</td><td></td></tr>
+    </tbody>
+  </table>
+  <div class="caption">
+    <p>
+      During the early diverging phase of our bridge design process, we used a Wishing exercise to help us think beyond constraints and imagine an ideal version of our structure. By listing out both “wishes” and “wish nots,” our team was able to creatively explore possibilities without being immediately limited by feasibility or resources.
+    </p>
+    <p>
+      This method allowed us to generate aspirational goals—such as “I wish our bridge achieves the best strength-to-weight ratio” and “I wish our bridge [FOS] are all the same”—which helped us define the performance standards we hoped to achieve. At the same time, the “wish not” column grounded our thinking by identifying failure modes and usability concerns we wanted to avoid, such as twisting under load or being too difficult to construct.
+    </p>
+    <p>
+      Together, these paired wishes helped us frame what success would look like for our final design and guided our criteria during later converging phases. It also ensured that our team's creativity was aligned with the practical requirements of the CIV102 project, setting a clear direction for both ideation and validation.
+    </p>
+  </div>
+  
+
+  <h2>SCAMPER</h2>
+  <div class="side-by-side-section">
+    <div class="text-block caption">
+      <p>Throughout the Bridge Design Process, we actively applied the SCAMPER technique—Substitute, Combine, Adapt, Modify, Put to another use, Eliminate, and Reverse—to guide our iterative design thinking and push beyond conventional solutions. This framework was especially helpful as we refined our structure to meet our primary goal: building a bridge capable of supporting at least 400 N of load.</p>
+      <p>Each step of SCAMPER offered a lens through which we could challenge and evolve our current designs. For instance, during early iterations, we used Substitute by replacing wide, thin flanges with narrower but stacked configurations. This substitution helped us better distribute stress without adding unnecessary surface area. We also used Combine by taking the most successful elements of multiple iterations—such as the top flange from one version and the internal splice system from another—and merging them into a stronger hybrid for our final prototype.</p>
+      <p>Adaptation was another major part of our approach. We analyzed stress concentrations using MATLAB and then adapted existing features, like adding glue tabs or rotating flange placements, to address those weak points. The Modify step came into play as we continually altered the geometry of our bridge—shortening or thickening walls, widening the top flange, and adjusting slot placements for better force transfer.</p>
+      <p>We also used SCAMPER to Put components to another use, like transforming internal support members into diaphragms that provided lateral stability—not just vertical strength. This shift improved our bridge’s overall integrity under simulated train movement. In later iterations, we Eliminated unnecessary elements, such as redundant side reinforcements, to reduce material use and complexity. Finally, we even explored Reversing certain connections, like how tabs were oriented, to make the structure easier to assemble and more resilient to folding stress.</p>
+      <p>By using SCAMPER intentionally throughout the project, we created a bridge design that was not only structurally sound but also thoughtfully optimized through layered creative thinking. It enabled us to move beyond surface-level improvements and deeply question how every element could evolve to contribute to our design’s success.</p>
+    </div>
+    <div class="image-block">
+      <img src="SCAMPER.png" alt="SCAMPER Design Variations" />
+    </div>
+  </div>
+
+  <h2>Verification</h2>
+  <div class="side-by-side-section">
+    <div class="text-block caption">
+      <p>As we progressed through each iteration of our bridge design, we incorporated MATLAB simulations as a key method of verification. These simulations allowed us to model how a train would move across the bridge and analyze the resulting stress distributions, deflections, and failure points across different components. Rather than relying on trial and error alone, we used this data-driven approach to validate whether each iteration met our structural goals before physically constructing it.</p>
+      <p>By running these simulations, we gained insight into which parts of our bridge were most vulnerable under load. This was essential, as our ultimate objective was to achieve a balanced design—one in which all Factors of Safety (FOS) across the bridge would approach failure at the same time. This type of uniform failure is structurally ideal because it ensures that no single component is disproportionately stressed, and it maximizes the efficiency of the material used.</p>
+      <p>Through MATLAB, we were able to verify and compare each version of our design, adjusting flange widths, splice connection placement, and tab lengths based on the outcomes of each simulation. When one iteration showed excessive buckling in the side walls while other areas remained well within the safety threshold, we knew that material was being underutilized elsewhere. This verification process helped us converge toward a design that didn’t just meet safety requirements—but did so in the most optimized, balanced way possible.</p>
+    </div>
+    <div class="image-block">
+      <img src="VERIFICATION.png" alt="Verification Simulation Output" />
+    </div>
+  </div>
+  <h2>Conclusion</h2>
+<div class="caption">
+  <p>
+    Our journey through the CIV102 Bridge Project was a true exercise in collaborative, analytical, and creative engineering design. From ideation through Wishing and SCAMPER to rigorous simulation and verification, every phase brought new insights that pushed us to refine both our structure and our problem-solving mindset. By leveraging both conceptual frameworks and technical tools like MATLAB, we were able to transform initial sketches into a robust and efficient bridge. This experience didn’t just teach us about shear forces, splice placement, or weight ratios—it reminded us how powerful teamwork and iteration are in creating something resilient and impactful. Bridge Backs built more than just a structure, we built a foundation in design thinking we’ll carry into every future challenge.
+  </p>
+</div>
+
+  <p><a href="index.html">← Back to Home</a></p>
+</body>
+</html>
